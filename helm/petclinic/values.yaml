@@ -7,7 +7,7 @@ env: dev
 
 image:
   repository: naraharinitheesh
-  tag: 1
+  tag: 8
 
 container:
   port: 8080
