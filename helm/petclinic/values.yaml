@@ -1,0 +1,22 @@
+app:
+  name: petclinic
+
+replicas: 2
+
+env: dev
+
+image:
+  repository: naraharinitheesh
+  tag: 1
+
+container:
+  port: 8080
+
+service:
+  name: petclinic-svc
+  port: 80
+
+ingress:
+  enabled: true
+  name: petclinic-ingress
+  path: /
