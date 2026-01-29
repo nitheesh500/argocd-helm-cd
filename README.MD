@@ -12,3 +12,4 @@ Service (petclinic-svc)
   ↓
 Pod(s) (petclinic-app)
 ```
+helm install petclinic ./helm/petclinic -n petclinic
