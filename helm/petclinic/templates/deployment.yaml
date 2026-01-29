@@ -26,7 +26,7 @@ spec:
             port: {{ .Values.container.port }}
           initialDelaySeconds: 20
 
-        livenessprobe:
+        livenessProbe:
           httpGet:
             path: "/actuator/health"
             port: {{ .Values.container.port }}

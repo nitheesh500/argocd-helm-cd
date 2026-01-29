@@ -1,11 +1,10 @@
 apiVersion: v1
-kind: service
+kind: Service
 metadata:
     name: {{ .Values.service.name }}
 spec:
-    type: ClusterIp
+    type: ClusterIP
     selector:
-        matchLabels:
             app: {{ .Values.app.name }}
             env: {{ .Values.env }}
         ports:
