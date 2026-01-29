@@ -6,7 +6,7 @@ replicas: 2
 env: dev
 
 image:
-  repository: naraharinitheesh
+  repository: naraharinitheesh/petclinic
   tag: 8
 
 container:
@@ -14,7 +14,7 @@ container:
 
 service:
   name: petclinic-svc
-  port: 80
+  port: 8080
 
 ingress:
   enabled: true
