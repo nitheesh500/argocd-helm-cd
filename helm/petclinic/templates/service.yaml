@@ -7,6 +7,6 @@ spec:
     selector:
             app: {{ .Values.app.name }}
             env: {{ .Values.env }}
-        ports:
+    ports:
         - port: {{ .Values.service.port }}
           targetPort: {{ .Values.container.port }}
