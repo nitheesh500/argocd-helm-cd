@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.app.name}}-app
+  namespace: petclinic
 spec:
   replicas: {{ .Values.replicas}}
   selector:
