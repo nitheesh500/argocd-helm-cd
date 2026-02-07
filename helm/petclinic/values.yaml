@@ -1,6 +1,6 @@
 app:
   name: petclinic
-namespace: petclinic
+
 replicas: 2
 
 env: dev
@@ -17,6 +17,5 @@ service:
   port: 8080
 
 ingress:
-  enabled: true
   name: petclinic-ingress
   path: /

@@ -1,18 +1,14 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  namespace: {{ .Values.namespace }}
   name: petclinic-sm
   labels:
-    release: monitoring   # MUST match Helm release name
+    release: monitoring
 spec:
   selector:
     matchLabels:
       app: {{ .Values.app.name }}
       env: {{ .Values.env }}
-  namespaceSelector:
-    matchNames:
-      - petclinic
   endpoints:
   - port: http
     path: /actuator/prometheus
