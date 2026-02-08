@@ -7,7 +7,7 @@ env: dev
 
 image:
   repository: naraharinitheesh/petclinic
-  tag: 3
+  tag: 4
 
 container:
   port: 8080
